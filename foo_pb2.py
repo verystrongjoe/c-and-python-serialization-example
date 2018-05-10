@@ -18,9 +18,9 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='foo.proto',
   package='prototest',
-  syntax='proto2',
   serialized_pb=_b('\n\tfoo.proto\x12\tprototest\"+\n\x03\x46oo\x12\n\n\x02id\x18\x01 \x02(\x05\x12\x0b\n\x03\x62\x61r\x18\x02 \x02(\t\x12\x0b\n\x03\x62\x61z\x18\x03 \x01(\t')
 )
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -38,21 +38,21 @@ _FOO = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      options=None),
     _descriptor.FieldDescriptor(
       name='bar', full_name='prototest.Foo.bar', index=1,
       number=2, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      options=None),
     _descriptor.FieldDescriptor(
       name='baz', full_name='prototest.Foo.baz', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      options=None),
   ],
   extensions=[
   ],
@@ -61,7 +61,6 @@ _FOO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
-  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
@@ -70,7 +69,6 @@ _FOO = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['Foo'] = _FOO
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Foo = _reflection.GeneratedProtocolMessageType('Foo', (_message.Message,), dict(
   DESCRIPTOR = _FOO,
